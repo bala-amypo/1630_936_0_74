@@ -3,7 +3,7 @@ package com.example.demo.entity;
 @entity
 public class StudentEntity{
     private Integer id;
-    private String username;
+    private String name;
     private String email;
     private String password;
     private Date createAt;
@@ -26,5 +26,17 @@ public class StudentEntity{
     public void setEmail(String email){
         this.email = email;
     }
-    public String getPassword =
+    public String getPassword(){
+        return password;
+    }
+    public void setPassword(String password){
+        this.password = password;
+    }
+    public Date getCreateAt(){
+        return createAt;
+    }
+    public void setCreateAt(String createAt){
+        this.createAt = createAt;
+    }
+    public StudentEntity(Integer id,String name,String email,String password,Date createAt)
  }
