@@ -1,7 +1,14 @@
 package com.example.demo.entity;
 
+import java.sql.Date;
+
+import jakarta.persistance.Entity;
+import jakarta.persistance.Id;
+
 @entity
 public class StudentEntity{
+    @Id
+    @Gener
     private Integer id;
     private String name;
     private String email;
@@ -39,7 +46,7 @@ public class StudentEntity{
         this.createAt = createAt;
     }
     public void StudentEntity(){
-        
+
     }
     public StudentEntity(Integer id,String name,String email,String password,Date createAt){
         this.id = id;
