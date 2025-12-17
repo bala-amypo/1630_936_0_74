@@ -9,6 +9,6 @@ import com.example.demo.service.StudentService;
 public class StudentServiceImpl implements StudentService{
     @Autowired StudentRepository student;
     public StudentEntity postData(StudentEntity stu){
-        return student.save
+        return student.save(stu);  
     }
 }
