@@ -3,12 +3,14 @@ package com.example.demo.entity;
 import java.sql.Date;
 
 import jakarta.persistance.Entity;
+import jakarta.persistance.GeneratedValue;
+import jakarta.persistance.GenerationType;
 import jakarta.persistance.Id;
 
 @entity
 public class StudentEntity{
     @Id
-    @Gener
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String email;
