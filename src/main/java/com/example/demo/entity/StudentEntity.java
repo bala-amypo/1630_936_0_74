@@ -10,11 +10,11 @@ import jakarta.persistence.Id;
 
 public class StudentEntity{
     @Id
-        @GeneratedValue(strategy=GenerationType.IDENTITY)
-            private Integer id;
-                private String name;
-                    private String email;
-                        private String password;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Integer id;
+    private String name;
+    private String email;
+    private String password;
                             private Date createAt;
 
                                 public void setId(Integer id){
@@ -57,3 +57,4 @@ public class StudentEntity{
                                                                                                                                                                                                                                         this.password = password;
                                                                                                                                                                                                                                                 this.createAt = createAt;
                                                                                                                                                                                                                                                     }
+}
