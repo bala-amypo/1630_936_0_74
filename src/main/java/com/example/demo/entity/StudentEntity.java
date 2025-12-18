@@ -46,15 +46,15 @@ public class StudentEntity{
         }
     public void setCreateAt(Date createAt){
         this.createAt = createAt;
-                                                                                                                                        }
-                                                                                                                                                                                                public void StudentEntity(){
+        }
+    public void StudentEntity(){
 
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                        public StudentEntity(Integer id,String name,String email,String password,Date createAt){
-                                                                                                                                                                                                                this.id = id;
-                                                                                                                                                                                                                        this.name = name;
-                                                                                                                                                                                                                                this.email = email;
-                                                                                                                                                                                                                                        this.password = password;
-                                                                                                                                                                                                                                                this.createAt = createAt;
-                                                                                                                                                                                                                                                    }
+    }
+    public StudentEntity(Integer id,String name,String email,String password,Date createAt){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.createAt = createAt;
+    }
 }

@@ -13,4 +13,5 @@ public class StudentServiceImpl implements StudentService{
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);  
     }
+    List<StudentEntity>getAllData();
 }
