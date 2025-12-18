@@ -57,6 +57,8 @@ public class ValidationEntity {
     public void setAge(int age){
         this.age = age;
         }
+    public ValidationEntity(){
+    }
     public ValidationEntity(Long id, @NotNull
     @Size(min = 2,max = 10,message = "must be 2 to 10 character") String username;
     @Email(message = "Email is not valid")
