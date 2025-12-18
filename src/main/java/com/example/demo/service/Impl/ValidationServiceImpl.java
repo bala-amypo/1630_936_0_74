@@ -11,7 +11,7 @@ import com.example.demo.service.ValidationService;
 public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepository valid;
     @Override
-    public StudentEntity postData(ValidationEntity val){
+    public ValidationEntity postData(ValidationEntity val){
         return valid.save(val);  
     }
 }
