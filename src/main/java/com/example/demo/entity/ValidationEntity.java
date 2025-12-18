@@ -23,7 +23,39 @@ public class ValidationEntity {
     @Max (6)
     @NotNull(message = "Password is mandatory")
     private String password;
-    @Size(min = 18,max = 58)
+    @Size(min = 18,max = 58,message = "Age must be 18 to 58")
     @Positive(message = "Age must be positive number")
     private Integer age;
+
+    public void setId(Long id){
+        this.id = id;
+        }
+    public Long getId(){
+        return id;
+        }
+    public String getUsername(){
+        return name;
+        }
+    public void setUsername(String username){
+        this.name = name;
+        }
+    public String getEmail(){
+        return email;
+        }
+    public void setEmail(String email){
+        this.email = email;
+        }
+    public String getPassword(){
+        return password;
+        }
+    public void setPassword(String password){
+        this.password = password;
+        }
+    public Integer getAge(){
+        return age;         
+        }
+    public void setAge(Integer age){
+        this.age = age;
+        }
+    public ValidationEntity(Long id)
 }
