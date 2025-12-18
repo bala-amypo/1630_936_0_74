@@ -37,10 +37,10 @@ public class ValidationEntity {
         return id;
         }
     public String getUsername(){
-        return name;
+        return username;
         }
     public void setUsername(String username){
-        this.name = name;
+        this.name = username;
         }
     public String getEmail(){
         return email;
