@@ -23,7 +23,7 @@ public class ValidationEntity {
     @Max (6)
     @NotNull(message = "Password is mandatory")
     private String password;
-    @Min(18)
-    @Max(30)
+    @Size(min = 18,max = 58)
+    @Positive(message = "Age must be positive number")
     private Integer age;
 }
