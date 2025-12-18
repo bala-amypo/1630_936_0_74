@@ -8,5 +8,5 @@ public interface StudentService{
     List<StudentEntity>getAllData();
     String  DeleteData(int id);
     StudentEntity getData(int id);         
-    StudentEntity putData(int id);                                                        
+    StudentEntity updateData(int id,StudentEntity entity);                                                        
 }
