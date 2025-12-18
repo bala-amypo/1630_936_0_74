@@ -1,5 +1,6 @@
 package com.example.demo.service.Impl;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;   
 import com.example.demo.entity.StudentEntity;
@@ -13,5 +14,7 @@ public class StudentServiceImpl implements StudentService{
     public StudentEntity postData(StudentEntity stu){
         return student.save(stu);  
     }
-    List<StudentEntity>getAllData();
+    @Override
+    public List<StudentEntity>getAllData();
+        return student.findall();
 }
