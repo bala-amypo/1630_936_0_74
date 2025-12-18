@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.Valid;import com.example.demo.service.ValidationService;
+import com.example.demo.service.ValidationService;
 import org.springframework.web.bind.annotation.RequestBody;
 import jakarta.validation.Valid;
 
