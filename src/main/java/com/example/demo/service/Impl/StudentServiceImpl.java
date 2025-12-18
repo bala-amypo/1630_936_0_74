@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;   
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
-import org.springframework.web.bind.PathVariable;
+import org.springframework.web.bind.annotation.PathVariable;
 import com.example.demo.service.StudentService;                
 
 @Service
@@ -22,6 +22,6 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public String DeleteData(@PathVariable int id){
         student.DeleteById(id);
-        return "Deleted successfully"
+        return "Deleted successfully";
     }
 }
