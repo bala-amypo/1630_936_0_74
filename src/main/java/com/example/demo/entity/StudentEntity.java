@@ -47,7 +47,7 @@ public class StudentEntity{
     public void setCreateAt(Date createAt){
         this.createAt = createAt;
         }
-    public void StudentEntity(){
+    public  StudentEntity(){
 
     }
     public StudentEntity(Integer id,String name,String email,String password,Date createAt){
