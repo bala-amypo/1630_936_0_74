@@ -26,7 +26,7 @@ public class ValidationEntity {
     @Max (6)
     @NotNull(message = "Password is mandatory")
     private String password;
-    @Size(min = 18,max = 58,message = "Age must be 18 to 58")
+    @Max(30)
     @Positive(message = "Age must be positive number")
     private int age;
 
@@ -69,7 +69,7 @@ public class ValidationEntity {
     @Max (6)
     @NotNull(message = "Password is mandatory")
      String password,
-    @Size(min = 18,max = 58,message = "Age must be 18 to 58")
+    @Max(30)
     @Positive(message = "Age must be positive number")
      int age){
         this.id = id;
