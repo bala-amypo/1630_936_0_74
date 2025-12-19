@@ -20,6 +20,6 @@ public class StudentDetailsEntity{
     private Long id;
     private String name;
     private String email;
-    
+    private String address;
 
 }
