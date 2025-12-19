@@ -12,9 +12,15 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Positive;
 import com.example.demo.service.ValidationService;
 import jakarta.validation.Valid;
-import 
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.
+
 
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ValidationEntity {
     @Id  
     @GeneratedValue(strategy=GenerationType.IDENTITY)
