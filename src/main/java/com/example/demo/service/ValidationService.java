@@ -4,5 +4,5 @@ import com.example.demo.entity.ValidationEntity;
 
 public interface ValidationService{
     ValidationEntity postdata(ValidationEntity val);
-    ValidationEntity getdata(int id);  
+    ValidationEntity getdata(Long id);  
 }
