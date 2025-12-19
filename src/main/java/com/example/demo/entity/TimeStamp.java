@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,6 +21,6 @@ public class TimeStamp{
     private Integer id;
     private String name;
     private String email;
-    private Date createAt;
-    private LocalDate updateAt;
+    private LocalDateTime createAt;
+    private LocalDateTime updateAt;
 }
