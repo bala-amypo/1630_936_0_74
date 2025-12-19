@@ -20,7 +20,5 @@ public class StudentDetailsEntity{
     private Long id;
     private int idCardNo;
     private String student_id;
-    private String password;
-    private Date createAt;
 
 }
