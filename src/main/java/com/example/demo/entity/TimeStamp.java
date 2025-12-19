@@ -9,12 +9,13 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistance.PrePersist;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
+@PrePersist
 public class TimeStamp{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
