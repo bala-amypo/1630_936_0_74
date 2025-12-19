@@ -24,4 +24,5 @@ public class ValidationController{
     @GetMapping("/valfind/{id}")
     public ValidationEntity find(@PathVariable int id){
         return service.getdata(id);
+    }
 }
