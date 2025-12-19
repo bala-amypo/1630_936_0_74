@@ -1,8 +1,8 @@
 package com.example.demo.exception;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.web.find.annotation.RestControllerAdvice;
-import org.springframework.web.find.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.http.ResponseEntity;
 
 @RestControllerAdvice
