@@ -14,7 +14,7 @@ import com.example.demo.service.ValidationService;
 import jakarta.validation.Valid;
 import lombok.Data;
 import lombok.AllArgsConstructor;
-import lombok.
+import lombok.NoArgsConstructor;
 
 
 @Entity
