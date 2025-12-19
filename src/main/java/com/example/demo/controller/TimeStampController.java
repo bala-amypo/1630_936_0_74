@@ -17,7 +17,7 @@ import jakarta.validation.Valid;
 public class TimeStampController{
     @Autowired  TimeStampService ser;
     @PostMapping("/timepost")
-    public StudentEntity sendData(@RequestBody StudentEntity stu){
-        return ser.postData(stu);
+    public TimeStamp sendData(@RequestBody TimeStamp val){
+        return ser.postData(val);
     }
 }
