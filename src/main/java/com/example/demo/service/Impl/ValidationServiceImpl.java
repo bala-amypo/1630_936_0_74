@@ -11,11 +11,11 @@ import com.example.demo.service.ValidationService;
 public class ValidationServiceImpl implements ValidationService{
     @Autowired ValidationRepository valid;
     @Override
-    public ValidationEntity postData(ValidationEntity val){
+    public ValidationEntity postdata(ValidationEntity val){
         return valid.save(val);  
     }
     @Override
-    public ValidationEntity getData(int id){
+    public ValidationEntity getdata(int id){
     return valid.findById(id);
     }
 }
